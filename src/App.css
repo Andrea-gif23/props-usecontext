@@ -1,27 +1,88 @@
-/* App.css */
-.App {
+body {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  background-color: #e0f7fa; 
+  font-family: Arial, sans-serif;
 }
 
-.calculator {
-  margin: 20px;
+.calculator, .result {
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px; 
+}
+
+.calculator h2, .result h2 {
+  margin-bottom: 20px;
+  color: #00796b; 
+}
+
+.display {
+  margin-bottom: 20px;
+}
+
+.display p {
+  margin: 5px 0;
+  color: #00796b; 
 }
 
 .buttons {
   display: grid;
-  grid-template-columns: repeat(3, 50px);
-  grid-gap: 10px;
+  grid-template-columns: repeat(3, 80px); 
+  gap: 15px; 
+  justify-content: center;
 }
 
 button {
-  width: 50px;
-  height: 50px;
-  font-size: 1.2rem;
+  width: 80px; 
+  height: 80px; 
+  font-size: 1.5rem; 
+  color: #800000; 
+  background-color: #f0f0f0; 
+  border: none;
+  border-radius: 10px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.result {
+button:hover {
+  background-color: #d0d0d0; 
+}
+
+.result p {
+  margin: 10px 0;
+  color: #00796b; 
+}
+
+.result button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #00796b; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.result button:hover {
+  background-color: #005f56; 
+}
+
+.result-link {
+  display: inline-block;
   margin-top: 20px;
+  color: #00796b; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.result-link:hover {
+  text-decoration: underline;
 }
